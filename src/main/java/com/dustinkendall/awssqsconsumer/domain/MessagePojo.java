@@ -8,7 +8,7 @@ public class MessagePojo
     private int id;
     private String text;
 
-    @JsonProperty("use this annotation if json key doesn't match the pojo")
+    //@JsonProperty("use this annotation if json key doesn't match the pojo")
     public int getId() {
         return id;
     }
