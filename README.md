@@ -118,7 +118,7 @@ Pojo Result:
 2022-05-13 01:37:06.973  INFO 6392 --- [           main] c.d.a.AwsSqsConsumerApplication          : Started AwsSqsConsumerApplication in 1.893 seconds (JVM running for 2.699)
 The pojo was automatically deserialized by jackson/spring because 
 contentType = application/json
-MessagePojo{id=0, text='this is the first sqs message'}
+MessagePojo{id=1, text='this is the first sqs message'}
 ```
 
 Single Message using `receivePojoMap()`:
@@ -151,9 +151,9 @@ Map Result:
 2022-05-13 01:31:35.776  WARN 11724 --- [           main] i.a.c.m.l.SimpleMessageListenerContainer : AmazonSQSBufferedAsyncClient that Spring Cloud AWS uses by default to communicate with SQS is not compatible with FIFO queues. Consider registering non-buffered AmazonSQSAsyncClient bean.
 2022-05-13 01:31:35.823  INFO 11724 --- [           main] c.d.a.AwsSqsConsumerApplication          : Started AwsSqsConsumerApplication in 1.859 seconds (JVM running for 2.747)
 Entry Key = dynamic_key
-Entry Value = MessagePojo{id=0, text='this is the first sqs message'}
+Entry Value = MessagePojo{id=1, text='this is the first sqs message'}
 Entry Key = second_key
-Entry Value = MessagePojo{id=0, text='this is the second sqs message'}
+Entry Value = MessagePojo{id=2, text='this is the second sqs message'}
 
 ```
 
@@ -187,7 +187,7 @@ Removes the above message.
 2022-05-13 01:55:24.771  INFO 21648 --- [           main] c.d.a.AwsSqsConsumerApplication          : Started AwsSqsConsumerApplication in 2.027 seconds (JVM running for 2.846)
 The pojo was automatically deserialized by jackson/spring because 
 contentType = application/json
-MessagePojo{id=0, text='this is the first sqs message'}
+MessagePojo{id=1, text='this is the first sqs message'}
 
 ```
 
